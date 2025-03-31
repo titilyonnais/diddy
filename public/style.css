@@ -1,0 +1,28 @@
+.image {
+    position: relative;
+}
+
+.image img {
+    width: 300px;
+    height: 300px;
+    border-radius: 200px;
+    margin: 20px;
+    background: linear-gradient(145deg, rgba(255, 255, 255, 0.3), rgba(255, 255, 255, 0.1));
+    backdrop-filter: blur(25px) saturate(2);
+    /* Stronger blur and saturation */
+    -webkit-backdrop-filter: blur(25px) saturate(2);
+    /* Safari compatibility */
+    border: 2px solid rgba(255, 255, 255, 0.4);
+    /* More visible border */
+    box-shadow: 0 20px 40px rgba(0, 0, 0, 0.4), 0 10px 15px rgba(0, 0, 0, 0.3);
+    /* Enhanced depth effect */
+    position: relative;
+    z-index: 1;
+    transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+}
+
+.image img:hover {
+    transform: scale(1.05);
+    transition: transform 0.3s ease-in-out;
+    /* Smooth scaling effect on hover */
+}
